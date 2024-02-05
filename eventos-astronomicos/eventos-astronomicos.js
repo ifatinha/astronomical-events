@@ -1,4 +1,4 @@
-let dataAtual = new Date("2023-03-25");
+let dataAtual = new Date();
 
 function chuvasDeMeteorosDeHoje(chuva) {
 
@@ -15,7 +15,7 @@ function chuvasDeMeteorosDeHoje(chuva) {
 }
 
 function verificarChuvasFuturas(chuva) {
-    let dataFutura = new Date("2023-03-25");
+    let dataFutura = new Date();
     dataFutura.setMonth(dataFutura.getMonth() + 2);
     let dataInicioChuva = new Date(chuva.inicio + "/" + dataAtual.getFullYear());
 

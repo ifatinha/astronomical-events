@@ -44,11 +44,22 @@ function formatarData(data) {
     return dataFormatada[1] + "/" + dataFormatada[0];
 }
 
-function exibirCabecalho() { }
+function exibirCabecalho() {
+    let nome = "NOME DA CHUVA".padEnd(30, " ");
+    let intensidade = "- intensidade - hemisfério - período";
 
-function imprimirDadosChuva(chuva) {
-    let cabecalho = "Nome da chuva".padEnd(5, " ");
-    console.log(cabecalho);
+    return (nome + intensidade).toUpperCase();
 }
 
-export default imprimirDadosChuva;
+function imprimirDadosChuva(chuva) {
+    let chuvaNome = chuva.nome.padEnd(29, " ");
+    let intensidade = formataIntensidade(chuva.intensidade).padEnd(11, " ");
+    let hemisferio = formatarHemisferio(chuva.declinacao).padEnd(10, " ");
+    let dataInicio = formatarData(chuva.inicio);
+    let dataFim = formatarData(chuva.fim);
+    let periodo = dataInicio + " à " + dataFim;
+
+    console.log(chuvaNome + " - " + intensidade + " - " + hemisferio + " - " + periodo);
+}
+
+export { exibirCabecalho, imprimirDadosChuva };
