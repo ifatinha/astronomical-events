@@ -29,7 +29,7 @@ O projeto está organizado da seguinte forma:
 Clone o repositório:
 
 ```bash
-[git clone <URL_DO_REPOSITORIO>](https://github.com/ifatinha/astronomical-events.git)
+git clone https://github.com/ifatinha/astronomical-events.git
 ```
 
 Instale as depências
