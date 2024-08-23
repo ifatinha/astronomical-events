@@ -1,4 +1,4 @@
-# astronomical-events
+# Astronomical events
 
 ## The purpose of this project is to create an application that displays two lists of meteor showers. Are they:
 
